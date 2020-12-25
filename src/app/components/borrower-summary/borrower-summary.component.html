@@ -1,0 +1,106 @@
+<div class="card">
+    <ul class="list-group list-group-flush">
+        <li class="list-title list-group-item">
+            BORROWER DETAILS</li>
+        <hr>
+        <li class="list-group-item">
+            <a routerLink="/owned-investment-properties" routerLinkActive="active">Total properties owned:</a>
+            {{this.data.totalInvestmentProps}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/purchase-or-refinance" routerLinkActive="active">Purchase or Refinance:</a>
+            {{this.data.purchaseOrRefi}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/own-personal-residence" routerLinkActive="active">Owner of a personal residence:</a>
+            {{this.data.ownPersonalResidence}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/show-taxable-income" routerLinkActive="active">Show enough taxable income:</a>
+            {{this.data.taxableIncome}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/type-of-business" routerLinkActive="active">What type of business are you in:</a>
+            {{this.data.typeOfBusiness}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/self-employed" routerLinkActive="active">Are you self employed:</a>
+            {{this.data.selfEmployed}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/avg-monthly-deposits" routerLinkActive="active">Average monthly deposits:</a>
+            {{this.data.avgMonthlyDeps}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/target-date" routerLinkActive="active">Target date:</a>
+            {{this.data.targetDate}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/purchase-price" routerLinkActive="active">Purchase price:</a>
+            {{this.data.purchasePrice}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/lease-info" routerLinkActive="active">Is the property leased:</a>
+            {{this.data.leaseInfo}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/monthly-lease-amt" routerLinkActive="active">Monthly lease amount:</a>
+            {{this.data.monthlyLeaseAmt}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/expected-monthly-rent" routerLinkActive="active">Current market rents:</a>
+            {{this.data.currentMarketRents}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/subject-property-address" routerLinkActive="active">Subject property address:</a>
+            {{this.data.subjectPropertyAddress}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/property-type" routerLinkActive="active">Subject property type:</a>
+            {{this.data.subjectPropertyType}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/number-of-units" routerLinkActive="active">Number of units:</a>
+            {{this.data.numOfUnits}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/requested-loan-to-value" routerLinkActive="active">Requested LTV:</a>
+            {{this.data.requestedLoanToValue}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/requested-loan-amount" routerLinkActive="active">Requested loan amount:</a>
+            {{this.data.requestedLoanAmt}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/annual-re-taxes" routerLinkActive="active">Annual RE taxes:</a>
+            {{this.data.annualRealEstateTaxes}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/property-insurance-costs" routerLinkActive="active">Property insurance costs:</a>
+            {{this.data.propertyInsuranceCosts}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/annual-hoa-fees" routerLinkActive="active">Annual HOA fees:</a>
+            {{this.data.annualHoaFees}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/citizen-check" routerLinkActive="active">US Citizen:</a>
+            {{this.data.usCitizenCheck}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/estimated-fico-score" routerLinkActive="active">Estimated FICO:</a>
+            {{this.data.estimatedFicoScore}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/prior-credit-dings" routerLinkActive="active">Any major credit hits:</a>
+            {{this.data.majorCreditHit}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/major-mortgage-lates" routerLinkActive="active">Any mortgage lates:</a>
+            {{this.data.mortgageLates}}
+        </li>
+    </ul>
+    <div class="borrower-summary-button">
+        <a routerLink="/citizen-check" routerLinkActive="active">SUBMIT TO SHAPE</a>
+    </div>
+</div>

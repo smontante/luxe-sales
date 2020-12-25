@@ -1,1 +1,326 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0;
+       font-family: 'Oswald', sans-serif;
+       background-color: #103952;
+    }
+
+.what-to-say {
+   color: #f0f0f0;
+}
+
+.home-page-container {
+   margin-left: 20px;
+   margin-top: 50px;
+}
+
+.divider {
+   width: 200px;
+   height: 6px;
+   margin-left: 50px;
+   margin-bottom: 20px;
+   background-color: #696969;
+}
+
+.luxe-blue-button-left {
+   background-color: #2b4a81;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   border-bottom-left-radius: 9px;
+   border-top-left-radius: 9px;
+   font-size: 30px;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.luxe-blue-button-left:hover {
+   background-color: #f0f0f0;
+   color: #004aad;
+}
+
+.luxe-light-button-middle {
+   background-color: #27aae1;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   font-size: 30px;
+   color: white;
+   border-color: #004aad;
+   margin: 0px 4px 0px 4px;
+   cursor: pointer;
+}
+
+.luxe-light-button-middle:hover {
+   background-color: #f0f0f0;
+   color: #004aad;
+}
+
+.luxe-blue-button-right {
+   background-color: #385df5;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   border-bottom-right-radius: 9px;
+   border-top-right-radius: 9px;
+   font-size: 30px;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.luxe-blue-button-right:hover {
+   background-color: #f0f0f0;
+   color: #004aad;
+}
+
+.button-left {
+   background-color: #e98b2e;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   border-bottom-left-radius: 9px;
+   border-top-left-radius: 9px;
+   font-size: 30px;
+   color:#103952;
+   border: none;
+   cursor: pointer;
+}
+
+.button-left:hover {
+   background-color: #f0f0f0;
+   color: #004aad;
+}
+
+.button-left a {
+   color: #103952;
+}
+
+.button-middle {
+   background-color: #00aaf4;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   font-size: 30px;
+   color: black;
+   border-color: #004aad;
+   margin: 0px 4px 0px 4px;
+   cursor: pointer;
+}
+
+.button-middle:hover {
+   background-color: #f0f0f0;
+   color: #004aad;
+}
+
+.button-middle a {
+   color: white;
+}
+
+.button-right {
+   background-color: #004aad;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   border-bottom-right-radius: 9px;
+   border-top-right-radius: 9px;
+   font-size: 30px;
+   color:#a49234;
+   border: none;
+   cursor: pointer;
+}
+
+.button-right:hover {
+   background-color: #f0f0f0;
+   color: #004aad;
+}
+
+.submit-button-none {
+   background-color: #696969;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   margin: 8px;
+   font-size: 30px;
+   color:#103952;
+   border: none;
+   cursor: pointer;
+}
+
+ul hr {
+   color: #696969;
+}
+
+.submit-button {
+   background-color: #02d984;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   margin: 8px;
+   font-size: 30px;
+   color:#103952;
+   border: none;
+   cursor: pointer;
+}
+
+.borrower-summary-button {
+   background-color: #29a3da;
+   border-radius: 4px;
+   width: 200px;
+   height: 30px;
+   text-align: center;
+   font-size: 15px;
+   padding-top: 8px;
+   margin-left: 30px;
+   color:#103952;
+   border: none;
+   cursor: pointer;  
+}
+
+/* response styles */
+.response-container {
+   width: 900px;
+}
+
+.card {
+   width: 25rem; 
+   margin-top: 50px;  
+   margin-left: 20px;
+   padding: 20px;
+   box-shadow: 3px 3px 10px 3px #000000;
+}
+
+.card-text {
+   color: #696969;
+}
+
+.list-title {
+   text-align: center; 
+   font-weight: bold; 
+   font-size: 30px; 
+   color:#a49234;
+}
+
+.response-container h1 {
+   color: white;
+   text-align: left;
+   font-size: 50px;
+   padding: 20px;
+}
+
+.response-container ul li {
+   font-size: 32px;
+   color: #f0f0f0;
+   margin: 10px;
+   letter-spacing: 2px;
+}
+
+.product-link {
+   color:#f0f0f0;
+   font-size: 35px;
+   padding: 20px;
+   font-style: none;
+   text-decoration: none;
+   font-family: 'Oswald', sans-serif;
+}
+
+.funnel-link a {
+   color:#a49234;
+   font-size: 26px;
+   padding: 20px;
+}
+
+.form-select {
+   width: 300px;
+   height: 50px;
+   border-radius: 6px;
+}
+
+.list-group-item {
+   text-decoration: none;
+   list-style-type: none;
+   color: #a49234;
+}
+
+a:-webkit-any-link {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #004aad;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav h3 {
+    color: #f1f1f1;
+    padding: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+  
+  .sidenav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color:#a49234;
+    display: block;
+    letter-spacing: 3px;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .question-container {
+   margin-left: 280px;
+   margin-top: 50px;
+   max-width: 800px;
+}
+
+.header-text {
+   font-size: 30px; 
+   color: #a49234;
+   margin-left: 20px;
+   text-align: center;
+}
+
+.question-text {
+   font-size: 50px; 
+   color: white; 
+   max-width: 500px; 
+   text-align: left; 
+   margin-top: 35px;
+}
+
+.questionInput {
+   max-width: 400px; 
+   height: 70px; 
+   font-size: 40px;
+}
+
+.formBtn {
+   margin-top: 10px; 
+   margin-left: 45px;
+   border-radius: 6px; 
+   background-color:#02d984; 
+   border:none; 
+   height: 70px; 
+   width: 300px;  
+}
+
+
+
+
