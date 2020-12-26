@@ -39,6 +39,7 @@ import { TargetDateComponent } from './pages/questions/target-date/target-date.c
 import { RequestedLoanAmountComponent } from './pages/questions/requested-loan-amount/requested-loan-amount.component';
 import { PropertyInsuranceCostComponent } from './pages/questions/property-insurance-cost/property-insurance-cost.component';
 import { ConfirmBorrowerSummaryComponent } from './pages/funnel/confirm-borrower-summary/confirm-borrower-summary.component';
+import { SubmittedComponent } from './pages/funnel/submitted/submitted.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { ConfirmBorrowerSummaryComponent } from './pages/funnel/confirm-borrower
     TargetDateComponent,
     RequestedLoanAmountComponent,
     PropertyInsuranceCostComponent,
-    ConfirmBorrowerSummaryComponent
+    ConfirmBorrowerSummaryComponent,
+    SubmittedComponent
   ],
   imports: [
     BrowserModule,

@@ -232,11 +232,17 @@ export class BorrowerDataService {
       link: 'confirm-borrower-summary', 
       header: '',
       question: 'Let me confirm the information I have is correct. Can I answer answer questions beforehand?'
+    },
+    {
+      id: 33, name: 'submitted', 
+      link: 'submitted', 
+      header: '',
+      question: 'Data submitted to Shape!'
     }
   ]
 
   constructor() { 
- 
+    
   }
 
   getValue() {

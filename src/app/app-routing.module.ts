@@ -26,6 +26,7 @@ import { EstimatedFicoComponent } from './pages/questions/estimated-fico/estimat
 import { PriorCreditDingsComponent } from './pages/questions/prior-credit-dings/prior-credit-dings.component';
 import { MortgageLatesComponent } from './pages/questions/mortgage-lates/mortgage-lates.component';
 import { ConfirmBorrowerSummaryComponent } from './pages/funnel/confirm-borrower-summary/confirm-borrower-summary.component';
+import { SubmittedComponent } from './pages/funnel/submitted/submitted.component';
 
 const routes: Routes = [
   { path: '', component: InvestmentPropertiesComponent },
@@ -53,7 +54,8 @@ const routes: Routes = [
   { path: 'estimated-fico-score', component: EstimatedFicoComponent },
   { path: 'prior-credit-dings', component: PriorCreditDingsComponent },
   { path: 'major-mortgage-lates', component: MortgageLatesComponent },
-  { path: 'confirm-borrower-summary', component: ConfirmBorrowerSummaryComponent }
+  { path: 'confirm-borrower-summary', component: ConfirmBorrowerSummaryComponent },
+  { path: 'submitted', component: SubmittedComponent }
 ];
 
 @NgModule({

@@ -190,11 +190,21 @@ ul hr {
    margin-top: 50px;  
    margin-left: 20px;
    padding: 20px;
-   box-shadow: 3px 3px 10px 3px #000000;
+   // box-shadow: 3px 3px 10px 3px #000000;
 }
 
 .card-text {
    color: #696969;
+}
+
+.form-row {
+   margin: 6px;
+}
+
+::placeholder {
+   font-size: 20px;
+   padding: 20px;
+   font-family: 'Oswald', sans-serif;
 }
 
 .list-title {
@@ -308,7 +318,8 @@ a:-webkit-any-link {
 .questionInput {
    max-width: 400px; 
    height: 70px; 
-   font-size: 40px;
+   font-size: 32px;
+   font-family: 'Oswald', sans-serif;
 }
 
 .formBtn {

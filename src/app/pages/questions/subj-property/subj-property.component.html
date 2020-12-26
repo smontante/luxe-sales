@@ -4,16 +4,29 @@
     <div class="divider"></div>
     <div class="row">
         <div class="col-sm-10">
-            <input [(ngModel)]="this.data.subjectPropertyAddress" type="text" class="form-control form-control-lg questionInput">
-            <div style="margin-top: 15px;" class="row">
-                <div class="col-md-4">
-                    <div class="btn-group">
-                        <div class="submit-button">
-                            <a class="product-link" routerLink="/property-type" routerLinkActive="active">SUBMIT</a>
-                        </div>
+            <form>
+                <div class="form-row">
+                    <input [(ngModel)]="this.data.subjectPropertyStreet" type="text" class="form-control form-control-lg questionInput" id="address"
+                        placeholder="What street?">
+                </div>
+                <div class="form-row">
+                    <input [(ngModel)]="this.data.subjectPropertyCity" type="text" class="form-control form-control-lg questionInput" id="city"
+                        placeholder="What city?">
+                </div>
+                <div class="form-row">
+                    <input [(ngModel)]="this.data.subjectPropertyState" type="text" class="form-control form-control-lg questionInput" id="state"
+                        placeholder="What state?">
+                </div>
+                <div class="form-row">
+                    <input [(ngModel)]="this.data.subjectPropertyZip"type="text" class="form-control form-control-lg questionInput" id="zip"
+                        placeholder="What zip?">
+                </div>
+                <div class="btn-group">
+                    <div class="submit-button">
+                        <a class="product-link" routerLink="/property-type" routerLinkActive="active">SUBMIT</a>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
