@@ -26,10 +26,14 @@ import { UsCitizenComponent } from './pages/questions/us-citizen/us-citizen.comp
 import { EstimatedFicoComponent } from './pages/questions/estimated-fico/estimated-fico.component';
 import { PriorCreditDingsComponent } from './pages/questions/prior-credit-dings/prior-credit-dings.component';
 import { MortgageLatesComponent } from './pages/questions/mortgage-lates/mortgage-lates.component';
+import { EstimatedPropValueComponent } from './pages/questions/estimated-prop-value/estimated-prop-value.component';
 import { ConfirmBorrowerSummaryComponent } from './pages/funnel/confirm-borrower-summary/confirm-borrower-summary.component';
 import { SubmittedComponent } from './pages/funnel/submitted/submitted.component';
+import { ExistingLienAmtComponent } from './pages/questions/existing-lien-amt/existing-lien-amt.component';
 import { InterestedComponent } from './pages/funnel/interested/interested.component';
 import { ProductsComponent } from './pages/funnel/products/products.component';
+import { RehabCostsComponent } from './pages/questions/rehab-costs/rehab-costs.component';
+import { LengthOfRentalComponent } from './pages/questions/length-of-rental/length-of-rental.component';
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },
@@ -46,7 +50,7 @@ const routes: Routes = [
   { path: 'target-date', component: TargetDateComponent },
   { path: 'purchase-price', component: PurchasePriceComponent },
   { path: 'lease-info', component: PropertyLeaseComponent },
-  { path: 'monthly-lease-amt', component: MonthlyLeaseAmtComponent },
+  { path: 'monthly-lease-amount', component: MonthlyLeaseAmtComponent },
   { path: 'expected-monthly-rent', component: MonthlyMarketRentComponent },
   { path: 'subject-property-address', component: SubjPropertyComponent },
   { path: 'property-type', component: PropertyTypeComponent },
@@ -60,6 +64,10 @@ const routes: Routes = [
   { path: 'estimated-fico-score', component: EstimatedFicoComponent },
   { path: 'prior-credit-dings', component: PriorCreditDingsComponent },
   { path: 'major-mortgage-lates', component: MortgageLatesComponent },
+  { path: 'refi-property-value', component: EstimatedPropValueComponent },
+  { path: 'rehab-costs', component: RehabCostsComponent },
+  { path: 'existing-lien-amount', component: ExistingLienAmtComponent },
+  { path: 'span-of-rent', component: LengthOfRentalComponent },
   { path: 'confirm-borrower-summary', component: ConfirmBorrowerSummaryComponent },
   { path: 'submitted', component: SubmittedComponent }
 ];

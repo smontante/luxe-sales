@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BorrowerDataService } from '../../../services/borrower-data.service';
 
 @Component({
   selector: 'app-existing-lien-amt',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExistingLienAmtComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data:BorrowerDataService) { }
 
   ngOnInit(): void {
   }

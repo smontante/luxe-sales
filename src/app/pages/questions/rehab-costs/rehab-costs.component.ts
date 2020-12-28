@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BorrowerDataService } from '../../../services/borrower-data.service';
 
 @Component({
   selector: 'app-rehab-costs',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RehabCostsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data: BorrowerDataService) { }
 
   ngOnInit(): void {
   }
