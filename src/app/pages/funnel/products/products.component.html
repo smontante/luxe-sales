@@ -1,0 +1,70 @@
+<div class="container">
+    <div style="display: flex; flex-direction: row;">
+        <div class="question-container">
+            <h1 class="header-text">We're competitive in every way</h1>
+            <h1 class="question-text">Perfect, here's some features of our loan programs..</h1>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <div style="margin-top: 15px;" class="row">
+                        <div class="col-md-4">
+                            <div class="btn-group">
+                                <div (click)="this.funnel.showProductDiv.bridge = !this.funnel.showProductDiv.bridge; this.funnel.showProductDiv.rental = false;"
+                                    class="facebook-btn">
+                                    {{this.funnel.products[0].name}}
+                                </div>
+                                <div (click)="this.funnel.showProductDiv.rental = !this.funnel.showProductDiv.rental; this.funnel.showProductDiv.bridge = false;"
+                                    class="rvm-btn">
+                                    {{this.funnel.products[1].name}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 100px;" class="row">
+            <div class="container">
+                <div *ngIf="this.funnel.showProductDiv.bridge" class="response-container">
+                    <ul>
+                        <li>Rates starting at 7.99%</li>
+                        <li>Up to 85% LTV</li>
+                        <li>Covers 100% of rehab costs</li>
+                        <li>Loan amounts up to 2.5M</li>
+                        <li>No prepayment penalties</li>
+                        <li style="text-decoration: none; list-style-type: none;">
+                            <h1 class="question-text">
+                                Let's price something out for you!
+                            </h1>
+                        </li>
+                        <li style="list-style-type: none; text-decoration: none;">
+                            <div class="submit-button">
+                                <a class="product-link" routerLink="/owned-investment-properties" routerLinkActive="active">Start</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div *ngIf="this.funnel.showProductDiv.rental" class="response-container">
+                    <ul>
+                        <li>Rates starting at 4.99%</li>
+                        <li>Up to 80% of LTV (75% cash out)</li>
+                        <li>Covers 100% of rehab costs</li>
+                        <li>Loan amounts up to 2.5M</li>
+                        <li>Fixed Rate or Interest Only Options</li>
+                        <li>No Income | No W2 | No Tax Returns</li>
+                        <li style="text-decoration: none; list-style-type: none;">
+                            <h1 class="question-text">
+                                Let's price something out for you!
+                            </h1>
+                        </li>
+                        <li style="list-style-type: none; text-decoration: none;">
+                            <div class="submit-button">
+                                <a class="product-link" routerLink="/owned-investment-properties" routerLinkActive="active">Start</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

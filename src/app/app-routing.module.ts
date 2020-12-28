@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingComponent } from '../app/pages/landing/landing.component';
+import { MarketingChannelComponent } from '../app/pages/funnel/marketing-channel/marketing-channel.component';
 import { InvestmentPropertiesComponent } from '../app/pages/questions/investment-properties/investment-properties.component';
 import { AvgMonthlyDepComponent } from './pages/questions/avg-monthly-dep/avg-monthly-dep.component';
 import { MonthlyLeaseAmtComponent } from './pages/questions/monthly-lease-amt/monthly-lease-amt.component';
@@ -27,9 +28,14 @@ import { PriorCreditDingsComponent } from './pages/questions/prior-credit-dings/
 import { MortgageLatesComponent } from './pages/questions/mortgage-lates/mortgage-lates.component';
 import { ConfirmBorrowerSummaryComponent } from './pages/funnel/confirm-borrower-summary/confirm-borrower-summary.component';
 import { SubmittedComponent } from './pages/funnel/submitted/submitted.component';
+import { InterestedComponent } from './pages/funnel/interested/interested.component';
+import { ProductsComponent } from './pages/funnel/products/products.component';
 
 const routes: Routes = [
-  { path: '', component: InvestmentPropertiesComponent },
+  { path: '', component: MarketingChannelComponent },
+  { path: 'marketing-funnel', component: MarketingChannelComponent },
+  { path: 'interested', component: InterestedComponent },
+  { path: 'products', component: ProductsComponent },
   { path: 'owned-investment-properties', component: InvestmentPropertiesComponent },
   { path: 'own-personal-residence', component: PersonalResidenceComponent },
   { path: 'purchase-or-refinance', component: PurchaseOrRefinanceComponent },

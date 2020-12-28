@@ -1,24 +1,32 @@
-<div class="question-container">
-    <h1 class="header-text">{{this.data.questions[6].header}}</h1>
-    <h1 class="question-text">{{this.data.questions[6].question}}</h1>
-    <div class="divider"></div>
-    <div class="row">
-        <div class="col-sm-10">
-            <div style="margin-top: 15px;" class="row">
-                <div class="col-md-4">
-                    <div class="btn-group">
-                        <div class="submit-button">
-                            <a (click)="onItemSelector('purchase')" class="product-link" routerLink="/target-date" routerLinkActive="active">PURCHASE</a>
-                        </div>
-                        <div class="submit-button-none">
-                            <a (click)="onItemSelector('none')" class="product-link" routerLink="/" routerLinkActive="active">NONE</a>
-                        </div>
-                        <div class="submit-button"> 
-                            <a (click)="onItemSelector('refinance')" class="product-link" routerLink="/target-date" routerLinkActive="active">REFINANCE</a>
+<div class="container">
+    <div style="display: flex; flex-direction: row;">
+        <div class="question-container">
+            <h1 class="header-text">{{this.data.questions[6].header}}</h1>
+            <h1 class="question-text">{{this.data.questions[6].question}}</h1>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <div style="margin-top: 15px;" class="row">
+                        <div class="col-md-4">
+                            <div class="btn-group">
+                                <div class="submit-button">
+                                    <a (click)="onItemSelector('purchase')" class="product-link"
+                                        routerLink="/target-date" routerLinkActive="active">PURCHASE</a>
+                                </div>
+                                <div class="submit-button-none">
+                                    <a (click)="onItemSelector('none')" class="product-link" routerLink="/"
+                                        routerLinkActive="active">NONE</a>
+                                </div>
+                                <div class="submit-button">
+                                    <a (click)="onItemSelector('refinance')" class="product-link"
+                                        routerLink="/target-date" routerLinkActive="active">REFINANCE</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <app-borrower-summary></app-borrower-summary>
     </div>
 </div>

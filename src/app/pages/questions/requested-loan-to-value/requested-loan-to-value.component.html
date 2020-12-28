@@ -1,19 +1,26 @@
-<div class="question-container">
-    <h1 class="header-text">{{this.data.questions[15].header}}</h1>
-    <h1 class="question-text">{{this.data.questions[15].question}}</h1>
-    <div class="divider"></div>
-    <div class="row">
-        <div class="col-sm-10">
-            <input [(ngModel)]="this.data.requestedLoanToValue" type="text" class="form-control form-control-lg questionInput">
-            <div style="margin-top: 15px;" class="row">
-                <div class="col-md-4">
-                    <div class="btn-group">
-                        <div class="submit-button">
-                            <a class="product-link" routerLink="/requested-loan-amount" routerLinkActive="active">SUBMIT</a>
+<div class="container">
+    <div style="display: flex; flex-direction: row;">
+        <div class="question-container">
+            <h1 class="header-text">{{this.data.questions[15].header}}</h1>
+            <h1 class="question-text">{{this.data.questions[15].question}}</h1>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <input [(ngModel)]="this.data.requestedLoanToValue" type="text"
+                        class="form-control form-control-lg questionInput">
+                    <div style="margin-top: 15px;" class="row">
+                        <div class="col-md-4">
+                            <div class="btn-group">
+                                <div class="submit-button">
+                                    <a class="product-link" routerLink="/requested-loan-amount"
+                                        routerLinkActive="active">SUBMIT</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <app-borrower-summary></app-borrower-summary>
     </div>
 </div>

@@ -1,0 +1,64 @@
+<div class="container">
+    <div style="display: flex; flex-direction: row;">
+        <div class="question-container">
+            <h1 class="header-text">{{headerText}}</h1>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <div style="margin-top: 15px;" class="row">
+                        <div class="col-md-4">
+                            <div class="btn-group">
+                                <div (click)="this.funnel.showMktDiv.facebook = !this.funnel.showMktDiv.facebook; this.funnel.showMktDiv.rvm = false; this.funnel.showMktDiv.sms = false"
+                                    class="facebook-btn">
+                                    {{this.funnel.marketing_efforts[0].name}}
+                                </div>
+                                <div (click)="this.funnel.showMktDiv.rvm = !this.funnel.showMktDiv.rvm; this.funnel.showMktDiv.facebook = false; this.funnel.showMktDiv.sms = false"
+                                    class="rvm-btn">
+                                    {{this.funnel.marketing_efforts[1].name}}
+                                </div>
+                                <div (click)="this.funnel.showMktDiv.sms = !this.funnel.showMktDiv.rvm; this.funnel.showMktDiv.facebook = false; this.funnel.showMktDiv.rvm = false"
+                                    class="sms-btn">
+                                    {{this.funnel.marketing_efforts[2].name}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 100px;" class="row">
+            <div class="container">
+                <div *ngIf="this.funnel.showMktDiv.facebook" class="response-container">
+                    <h1>Thanks for contacting us back, you may have spoke with our social media manager. 
+                    <div class="divider"></div>
+                    How's the investing is going for you?</h1>
+                    <div class="funnel-link">
+                        <a style="color: #a49234;" routerLink="/interested" routerLinkActive="active">"i'm interested"</a>
+                        <a style="color: #a49234;" routerLink="/" routerLinkActive="active">"i'm not investing"</a>
+                        <a style="color: #a49234;"routerLink="/" routerLinkActive="active">"i'm not interested"</a>
+                    </div>
+                </div>
+                <div *ngIf="this.funnel.showMktDiv.rvm" class="response-container">
+                    <h1>Thank's for calling back... We've spoken in the past in regards to fix and flip financing.  
+                    <div class="divider"></div>
+                    Just following up, and seeing how the investing is going for you?</h1>
+                    <div class="funnel-link">
+                        <a style="color: #a49234;" routerLink="/interested" routerLinkActive="active">"i'm interested"</a>
+                        <a style="color: #a49234;" routerLink="/" routerLinkActive="active">"i'm not investing"</a>
+                        <a style="color: #a49234;"routerLink="/" routerLinkActive="active">"i'm not interested"</a>
+                    </div>
+                </div>
+                <div *ngIf="this.funnel.showMktDiv.sms" class="response-container">
+                    <h1>Thanks for responding to my text, I appreciate you reaching back out. 
+                    <div class="divider"></div>
+                    How's the investing is going for you?</h1>
+                    <div class="funnel-link">
+                        <a style="color: #a49234;" routerLink="/interested" routerLinkActive="active">"i'm interested"</a>
+                        <a style="color: #a49234;" routerLink="/" routerLinkActive="active">"i'm not investing"</a>
+                        <a style="color: #a49234;"routerLink="/" routerLinkActive="active">"i'm not interested"</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

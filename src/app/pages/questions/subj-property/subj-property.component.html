@@ -1,32 +1,38 @@
-<div class="question-container">
-    <h1 class="header-text">{{this.data.questions[12].header}}</h1>
-    <h1 class="question-text">{{this.data.questions[12].question}}</h1>
-    <div class="divider"></div>
-    <div class="row">
-        <div class="col-sm-10">
-            <form>
-                <div class="form-row">
-                    <input [(ngModel)]="this.data.subjectPropertyStreet" type="text" class="form-control form-control-lg questionInput" id="address"
-                        placeholder="What street?">
+<div class="container">
+    <div style="display: flex; flex-direction: row;">
+        <div class="question-container">
+            <h1 class="header-text">{{this.data.questions[12].header}}</h1>
+            <h1 class="question-text">{{this.data.questions[12].question}}</h1>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-sm-10">
+                    <form>
+                        <div class="form-row">
+                            <input [(ngModel)]="this.data.subjectPropertyStreet" type="text"
+                                class="form-control form-control-lg questionInput" id="address"
+                                placeholder="What street?">
+                        </div>
+                        <div class="form-row">
+                            <input [(ngModel)]="this.data.subjectPropertyCity" type="text"
+                                class="form-control form-control-lg questionInput" id="city" placeholder="What city?">
+                        </div>
+                        <div class="form-row">
+                            <input [(ngModel)]="this.data.subjectPropertyState" type="text"
+                                class="form-control form-control-lg questionInput" id="state" placeholder="What state?">
+                        </div>
+                        <div class="form-row">
+                            <input [(ngModel)]="this.data.subjectPropertyZip" type="text"
+                                class="form-control form-control-lg questionInput" id="zip" placeholder="What zip?">
+                        </div>
+                        <div class="btn-group">
+                            <div class="submit-button">
+                                <a class="product-link" routerLink="/property-type" routerLinkActive="active">SUBMIT</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-row">
-                    <input [(ngModel)]="this.data.subjectPropertyCity" type="text" class="form-control form-control-lg questionInput" id="city"
-                        placeholder="What city?">
-                </div>
-                <div class="form-row">
-                    <input [(ngModel)]="this.data.subjectPropertyState" type="text" class="form-control form-control-lg questionInput" id="state"
-                        placeholder="What state?">
-                </div>
-                <div class="form-row">
-                    <input [(ngModel)]="this.data.subjectPropertyZip"type="text" class="form-control form-control-lg questionInput" id="zip"
-                        placeholder="What zip?">
-                </div>
-                <div class="btn-group">
-                    <div class="submit-button">
-                        <a class="product-link" routerLink="/property-type" routerLinkActive="active">SUBMIT</a>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
+        <app-borrower-summary></app-borrower-summary>
     </div>
 </div>

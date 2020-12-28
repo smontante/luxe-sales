@@ -77,65 +77,43 @@ body { margin: 0;
    color: #004aad;
 }
 
-.button-left {
-   background-color: #e98b2e;
+.facebook-btn {
+ background-color: #4967aa;
+ color: white;
+ width: 200px;
+ padding: 20px;
+ text-align: center;
+ margin: 8px;
+ font-size: 30px;
+ color:#103952;
+ border: none;
+ cursor: pointer;
+}
+
+.rvm-btn {
+   background-color: #02d984;
+   color: white;
    width: 200px;
    padding: 20px;
    text-align: center;
-   border-bottom-left-radius: 9px;
-   border-top-left-radius: 9px;
+   margin: 8px;
    font-size: 30px;
    color:#103952;
    border: none;
    cursor: pointer;
 }
 
-.button-left:hover {
-   background-color: #f0f0f0;
-   color: #004aad;
-}
-
-.button-left a {
-   color: #103952;
-}
-
-.button-middle {
-   background-color: #00aaf4;
+.sms-btn {
+   background-color: #29a3da;
+   color: #fff0ff;
    width: 200px;
    padding: 20px;
    text-align: center;
+   margin: 8px;
    font-size: 30px;
-   color: black;
-   border-color: #004aad;
-   margin: 0px 4px 0px 4px;
-   cursor: pointer;
-}
-
-.button-middle:hover {
-   background-color: #f0f0f0;
-   color: #004aad;
-}
-
-.button-middle a {
-   color: white;
-}
-
-.button-right {
-   background-color: #004aad;
-   width: 200px;
-   padding: 20px;
-   text-align: center;
-   border-bottom-right-radius: 9px;
-   border-top-right-radius: 9px;
-   font-size: 30px;
-   color:#a49234;
+   color:#103952;
    border: none;
    cursor: pointer;
-}
-
-.button-right:hover {
-   background-color: #f0f0f0;
-   color: #004aad;
 }
 
 .submit-button-none {
@@ -229,7 +207,7 @@ ul hr {
 }
 
 .product-link {
-   color:#f0f0f0;
+   color:#02d984;
    font-size: 35px;
    padding: 20px;
    font-style: none;
@@ -304,7 +282,7 @@ a:-webkit-any-link {
    font-size: 30px; 
    color: #a49234;
    margin-left: 20px;
-   text-align: center;
+   text-align: left;
 }
 
 .question-text {

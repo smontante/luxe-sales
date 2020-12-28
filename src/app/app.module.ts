@@ -40,6 +40,11 @@ import { RequestedLoanAmountComponent } from './pages/questions/requested-loan-a
 import { PropertyInsuranceCostComponent } from './pages/questions/property-insurance-cost/property-insurance-cost.component';
 import { ConfirmBorrowerSummaryComponent } from './pages/funnel/confirm-borrower-summary/confirm-borrower-summary.component';
 import { SubmittedComponent } from './pages/funnel/submitted/submitted.component';
+import { MarketingChannelComponent } from './pages/funnel/marketing-channel/marketing-channel.component';
+import { InterestedComponent } from './pages/funnel/interested/interested.component';
+import { NotInterestedComponent } from './pages/funnel/not-interested/not-interested.component';
+import { NotInvestingComponent } from './pages/funnel/not-investing/not-investing.component';
+import { ProductsComponent } from './pages/funnel/products/products.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +84,12 @@ import { SubmittedComponent } from './pages/funnel/submitted/submitted.component
     RequestedLoanAmountComponent,
     PropertyInsuranceCostComponent,
     ConfirmBorrowerSummaryComponent,
-    SubmittedComponent
+    SubmittedComponent,
+    MarketingChannelComponent,
+    InterestedComponent,
+    NotInterestedComponent,
+    NotInvestingComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
