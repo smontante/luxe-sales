@@ -45,6 +45,12 @@ import { InterestedComponent } from './pages/funnel/interested/interested.compon
 import { NotInterestedComponent } from './pages/funnel/not-interested/not-interested.component';
 import { NotInvestingComponent } from './pages/funnel/not-investing/not-investing.component';
 import { ProductsComponent } from './pages/funnel/products/products.component';
+import { BorrowerSummaryRefiComponent } from './components/borrower-summary-refi/borrower-summary-refi.component';
+import { BorrowerSummaryFlipComponent } from './components/borrower-summary-flip/borrower-summary-flip.component';
+import { SubjectPropertyStreetComponent } from './pages/questions/subject-property-street/subject-property-street.component';
+import { SubjectPropertyCityComponent } from './pages/questions/subject-property-city/subject-property-city.component';
+import { SubjectPropertyStateComponent } from './pages/questions/subject-property-state/subject-property-state.component';
+import { SubjectPropertyZipComponent } from './pages/questions/subject-property-zip/subject-property-zip.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +95,13 @@ import { ProductsComponent } from './pages/funnel/products/products.component';
     InterestedComponent,
     NotInterestedComponent,
     NotInvestingComponent,
-    ProductsComponent
+    ProductsComponent,
+    BorrowerSummaryRefiComponent,
+    BorrowerSummaryFlipComponent,
+    SubjectPropertyStreetComponent,
+    SubjectPropertyCityComponent,
+    SubjectPropertyStateComponent,
+    SubjectPropertyZipComponent
   ],
   imports: [
     BrowserModule,

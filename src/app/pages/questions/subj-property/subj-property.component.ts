@@ -1,3 +1,4 @@
+import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { BorrowerDataService } from '../../../services/borrower-data.service';
 
@@ -11,6 +12,7 @@ export class SubjPropertyComponent implements OnInit {
   constructor(public data:BorrowerDataService) { }
 
   ngOnInit(): void {
-  }
+
+}
 
 }

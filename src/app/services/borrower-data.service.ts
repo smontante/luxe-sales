@@ -238,7 +238,31 @@ export class BorrowerDataService {
       link: 'submitted', 
       header: '',
       question: 'Data submitted to Shape!'
-    }
+    },
+    {
+      id: 34,
+      name: 'subject-property-street',
+      header: '',
+      question: 'What street is the property on?'
+    }, 
+    {
+      id: 35,
+      name: 'subject-property-city',
+      header: '',
+      question: 'What city is the property in?'
+    }, 
+    {
+      id: 36,
+      name: 'subject-property-state',
+      header: '',
+      question: 'What state is the property in?'
+    }, 
+    {
+      id: 37,
+      name: 'subject-property-zip',
+      header: '',
+      question: 'What is the zip code of the property?'
+    }, 
   ]
 
   constructor() { 

@@ -52,8 +52,11 @@
             {{this.data.currentMarketRents}}
         </li>
         <li class="list-group-item">
-            <a routerLink="/subject-property-address" routerLinkActive="active">Subject property address:</a>
-            {{this.data.subjectPropertyAddress}}
+            <a routerLink="/subject-property-street" routerLinkActive="active">Subject property address:</a>
+            {{this.data.subjectPropertyStreet}}, 
+            {{this.data.subjectPropertyCity}}, 
+            {{this.data.subjectPropertyState}}, 
+            {{this.data.subjectPropertyZip}},
         </li>
         <li class="list-group-item">
             <a routerLink="/property-type" routerLinkActive="active">Subject property type:</a>
@@ -98,6 +101,22 @@
         <li class="list-group-item">
             <a routerLink="/major-mortgage-lates" routerLinkActive="active">Any mortgage lates:</a>
             {{this.data.mortgageLates}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/refi-property-value" routerLinkActive="active">Estimated property value:</a>
+            {{this.data.refiPropertyValue}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/rehab-costs" routerLinkActive="active">Rehab costs:</a>
+            {{this.data.rehabCosts}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/existing-lien-amount" routerLinkActive="active">Existing lien amount:</a>
+            {{this.data.existingLienAmount}}
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/span-of-rent" routerLinkActive="active">Span of rental:</a>
+            {{this.data.spanOfRent}}
         </li>
     </ul>
     <div class="borrower-summary-button">

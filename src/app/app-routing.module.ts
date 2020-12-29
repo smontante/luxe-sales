@@ -16,6 +16,7 @@ import { RequestedLoanAmountComponent } from './pages/questions/requested-loan-a
 import { RequestedLoanToValueComponent } from './pages/questions/requested-loan-to-value/requested-loan-to-value.component';
 import { SelfEmployedComponent } from './pages/questions/self-employed/self-employed.component';
 import { SubjPropertyComponent } from './pages/questions/subj-property/subj-property.component';
+import { SubjectPropertyStreetComponent } from './pages/questions/subject-property-street/subject-property-street.component';
 import { TargetDateComponent } from './pages/questions/target-date/target-date.component';
 import { TaxableIncomeComponent } from './pages/questions/taxable-income/taxable-income.component';
 import { TypeOfBusinessComponent } from './pages/questions/type-of-business/type-of-business.component';
@@ -34,6 +35,9 @@ import { InterestedComponent } from './pages/funnel/interested/interested.compon
 import { ProductsComponent } from './pages/funnel/products/products.component';
 import { RehabCostsComponent } from './pages/questions/rehab-costs/rehab-costs.component';
 import { LengthOfRentalComponent } from './pages/questions/length-of-rental/length-of-rental.component';
+import { SubjectPropertyCityComponent } from './pages/questions/subject-property-city/subject-property-city.component';
+import { SubjectPropertyStateComponent } from './pages/questions/subject-property-state/subject-property-state.component';
+import { SubjectPropertyZipComponent } from './pages/questions/subject-property-zip/subject-property-zip.component';
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },
@@ -53,6 +57,10 @@ const routes: Routes = [
   { path: 'monthly-lease-amount', component: MonthlyLeaseAmtComponent },
   { path: 'expected-monthly-rent', component: MonthlyMarketRentComponent },
   { path: 'subject-property-address', component: SubjPropertyComponent },
+  { path: 'subject-property-street', component: SubjectPropertyStreetComponent },
+  { path: 'subject-property-city', component: SubjectPropertyCityComponent },
+  { path: 'subject-property-state', component: SubjectPropertyStateComponent },
+  { path: 'subject-property-zip', component: SubjectPropertyZipComponent },
   { path: 'property-type', component: PropertyTypeComponent },
   { path: 'number-of-units', component: NumOfUnitsComponent },
   { path: 'requested-loan-to-value', component: RequestedLoanToValueComponent },
@@ -71,6 +79,13 @@ const routes: Routes = [
   { path: 'confirm-borrower-summary', component: ConfirmBorrowerSummaryComponent },
   { path: 'submitted', component: SubmittedComponent }
 ];
+
+function getAddress() {
+  this.subjectPropertyAddress = this.subjectPropertyStreet 
+  + ' ,' + this.data.subjectPropertyCity 
+  + ', ' + this.data.subjectPropertyState 
+  + ', ' + this.data.subjectPropertyZip
+}
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
