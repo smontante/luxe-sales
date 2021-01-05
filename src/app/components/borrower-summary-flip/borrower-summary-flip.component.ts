@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BorrowersEntityComponent } from 'src/app/pages/questions/borrowers-entity/borrowers-entity.component';
+import { BorrowerDataService } from '../../../app/services/borrower-data.service';
 
 @Component({
   selector: 'app-borrower-summary-flip',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BorrowerSummaryFlipComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data:BorrowerDataService) { }
 
   ngOnInit(): void {
   }

@@ -39,6 +39,26 @@ export class BorrowerDataService {
   public spanOfRent:String;
   public monthlyLeaseAmt:String;
   public currentMarketRents:String;
+  public borrowerEntity:String;
+
+  public borrowerEntityFlip:String;
+  public estimatedFicoFlip:String;
+  public experienceFlip:String;
+  public rentalExperienceFlip:String;
+  public subjectPropertyStreetFlip:String;
+  public subjectPropertyCityFlip:String;
+  public subjectPropertyStateFlip:String;
+  public subjectPropertyZipFlip:String;
+  public subjectPropertyUnderContractFlip:Boolean;
+  public subjectPropertyTypeFlip:String;
+  public purchasePriceFlip:String;
+  public estimatedPropertyValueFlip:String;
+  public estimatedRehabCosts:String;
+  public annualInsuranceCostFlip:String;
+  public annualPropertyTaxesFlip:String;
+  public annualHoaFeesFlip:String;
+  public isPropertyLeasedFlip:Boolean;
+  public currentMortgageBrokerFlip:Boolean;
 
   public questions:any =[
     { 
@@ -263,6 +283,54 @@ export class BorrowerDataService {
       header: '',
       question: 'What is the zip code of the property?'
     }, 
+    {
+      id: 38,
+      name: 'borrower-entity',
+      header: '',
+      question: 'What is the name of your entity?'
+    },
+    {
+      id: 39,
+      name: 'flip-experience',
+      header: '',
+      question: 'How many flips have you completed in the last 2 years?'
+    },
+    {
+      id: 40,
+      name: 'rental-experience',
+      header: '',
+      question: 'How many rentals do you currently own?'
+    },
+    {
+      id: 41,
+      name: 'subject-property-street',
+      header: '',
+      question: 'What street is the property on?'
+    }, 
+    {
+      id: 42,
+      name: 'subject-property-city',
+      header: '',
+      question: 'What city is the property in?'
+    }, 
+    {
+      id: 43,
+      name: 'subject-property-state',
+      header: '',
+      question: 'What state is the property in?'
+    }, 
+    {
+      id: 44,
+      name: 'subject-property-zip',
+      header: '',
+      question: 'What is the zip code of the property?'
+    },
+    {
+      id: 45, 
+      name: 'rehab-costs',
+      header: '',
+      question: 'How much is the rehab costs?'
+    }
   ]
 
   constructor() { 

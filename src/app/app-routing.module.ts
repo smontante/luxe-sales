@@ -37,7 +37,7 @@ import { RehabCostsComponent } from './pages/questions/rehab-costs/rehab-costs.c
 import { LengthOfRentalComponent } from './pages/questions/length-of-rental/length-of-rental.component';
 import { SubjectPropertyCityComponent } from './pages/questions/subject-property-city/subject-property-city.component';
 import { SubjectPropertyStateComponent } from './pages/questions/subject-property-state/subject-property-state.component';
-import { SubjectPropertyZipComponent } from './pages/questions/subject-property-zip/subject-property-zip.component';
+import { SubjectPropertyZipComponent } from './pages/questions/subject-property-zip/subject-property-zip.component'; 
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },

@@ -51,6 +51,24 @@ import { SubjectPropertyStreetComponent } from './pages/questions/subject-proper
 import { SubjectPropertyCityComponent } from './pages/questions/subject-property-city/subject-property-city.component';
 import { SubjectPropertyStateComponent } from './pages/questions/subject-property-state/subject-property-state.component';
 import { SubjectPropertyZipComponent } from './pages/questions/subject-property-zip/subject-property-zip.component';
+import { BorrowersEntityComponent } from './pages/questions/borrowers-entity/borrowers-entity.component';
+import { BorrowerEntityFlipComponent } from './pages/flip-questions/borrower-entity-flip/borrower-entity-flip.component';
+import { EstimatedFicoFlipComponent } from './pages/flip-questions/estimated-fico-flip/estimated-fico-flip.component';
+import { ExperienceFlipComponent } from './pages/flip-questions/experience-flip/experience-flip.component';
+import { RentalExperienceFlipComponent } from './pages/flip-questions/rental-experience-flip/rental-experience-flip.component';
+import { SubjectPropertyStreetFlipComponent } from './pages/flip-questions/subject-property-street-flip/subject-property-street-flip.component';
+import { SubjectPropertyCityFlipComponent } from './pages/flip-questions/subject-property-city-flip/subject-property-city-flip.component';
+import { SubjectPropertyStateFlipComponent } from './pages/flip-questions/subject-property-state-flip/subject-property-state-flip.component';
+import { SubjectPropertyZipFlipComponent } from './pages/flip-questions/subject-property-zip-flip/subject-property-zip-flip.component';
+import { MortgageBrokerCheckComponent } from './pages/flip-questions/mortgage-broker-check/mortgage-broker-check.component';
+import { UnderContractFlipComponent } from './pages/flip-questions/under-contract-flip/under-contract-flip.component';
+import { PurchasePriceFlipComponent } from './pages/flip-questions/purchase-price-flip/purchase-price-flip.component';
+import { EstimatedValueFlipComponent } from './pages/flip-questions/estimated-value-flip/estimated-value-flip.component';
+import { RehabCostsFlipComponent } from './pages/flip-questions/rehab-costs-flip/rehab-costs-flip.component';
+import { ActiveLeaseFlipComponent } from './pages/flip-questions/active-lease-flip/active-lease-flip.component';
+import { AnnualInsuraceFlipComponent } from './pages/flip-questions/annual-insurace-flip/annual-insurace-flip.component';
+import { AnnualPropertyTaxesFlipComponent } from './pages/flip-questions/annual-property-taxes-flip/annual-property-taxes-flip.component';
+import { AnnualHoaFeesFlipComponent } from './pages/flip-questions/annual-hoa-fees-flip/annual-hoa-fees-flip.component';
 
 @NgModule({
   declarations: [
@@ -96,12 +114,31 @@ import { SubjectPropertyZipComponent } from './pages/questions/subject-property-
     NotInterestedComponent,
     NotInvestingComponent,
     ProductsComponent,
+    BorrowersEntityComponent,
     BorrowerSummaryRefiComponent,
     BorrowerSummaryFlipComponent,
     SubjectPropertyStreetComponent,
     SubjectPropertyCityComponent,
     SubjectPropertyStateComponent,
-    SubjectPropertyZipComponent
+    SubjectPropertyZipComponent,
+ 
+    BorrowerEntityFlipComponent,
+    EstimatedFicoFlipComponent,
+    ExperienceFlipComponent,
+    RentalExperienceFlipComponent,
+    SubjectPropertyStreetFlipComponent,
+    SubjectPropertyCityFlipComponent,
+    SubjectPropertyStateFlipComponent,
+    SubjectPropertyZipFlipComponent,
+    MortgageBrokerCheckComponent,
+    UnderContractFlipComponent,
+    PurchasePriceFlipComponent,
+    EstimatedValueFlipComponent,
+    RehabCostsFlipComponent,
+    ActiveLeaseFlipComponent,
+    AnnualInsuraceFlipComponent,
+    AnnualPropertyTaxesFlipComponent,
+    AnnualHoaFeesFlipComponent
   ],
   imports: [
     BrowserModule,
