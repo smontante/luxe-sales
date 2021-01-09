@@ -69,6 +69,8 @@ import { ActiveLeaseFlipComponent } from './pages/flip-questions/active-lease-fl
 import { AnnualInsuraceFlipComponent } from './pages/flip-questions/annual-insurace-flip/annual-insurace-flip.component';
 import { AnnualPropertyTaxesFlipComponent } from './pages/flip-questions/annual-property-taxes-flip/annual-property-taxes-flip.component';
 import { AnnualHoaFeesFlipComponent } from './pages/flip-questions/annual-hoa-fees-flip/annual-hoa-fees-flip.component';
+import { InvestmentPropertyFlipsComponent } from './pages/flip-questions/investment-property-flips/investment-property-flips.component';
+import { ConfirmBorrowerSummaryFlipComponent } from './pages/funnel/confirm-borrower-summary-flip/confirm-borrower-summary-flip.component';
 
 @NgModule({
   declarations: [
@@ -138,7 +140,9 @@ import { AnnualHoaFeesFlipComponent } from './pages/flip-questions/annual-hoa-fe
     ActiveLeaseFlipComponent,
     AnnualInsuraceFlipComponent,
     AnnualPropertyTaxesFlipComponent,
-    AnnualHoaFeesFlipComponent
+    AnnualHoaFeesFlipComponent,
+    InvestmentPropertyFlipsComponent,
+    ConfirmBorrowerSummaryFlipComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BorrowerDataFlipServiceService } from '../../../services/borrower-data-flip-service.service';
 
 @Component({
   selector: 'app-subject-property-zip-flip',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SubjectPropertyZipFlipComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data:BorrowerDataFlipServiceService) { }
 
   ngOnInit(): void {
   }

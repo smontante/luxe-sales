@@ -38,6 +38,17 @@ import { LengthOfRentalComponent } from './pages/questions/length-of-rental/leng
 import { SubjectPropertyCityComponent } from './pages/questions/subject-property-city/subject-property-city.component';
 import { SubjectPropertyStateComponent } from './pages/questions/subject-property-state/subject-property-state.component';
 import { SubjectPropertyZipComponent } from './pages/questions/subject-property-zip/subject-property-zip.component'; 
+import { BorrowerEntityFlipComponent } from './pages/flip-questions/borrower-entity-flip/borrower-entity-flip.component';
+import { EstimatedFicoFlipComponent } from './pages/flip-questions/estimated-fico-flip/estimated-fico-flip.component';
+import { InvestmentPropertyFlipsComponent } from './pages/flip-questions/investment-property-flips/investment-property-flips.component';
+import { MortgageBrokerCheckComponent } from './pages/flip-questions/mortgage-broker-check/mortgage-broker-check.component';
+import { UnderContractFlipComponent } from './pages/flip-questions/under-contract-flip/under-contract-flip.component';
+import { ExperienceFlipComponent } from './pages/flip-questions/experience-flip/experience-flip.component';
+import { SubjectPropertyStreetFlipComponent } from './pages/flip-questions/subject-property-street-flip/subject-property-street-flip.component';
+import { SubjectPropertyCityFlipComponent } from './pages/flip-questions/subject-property-city-flip/subject-property-city-flip.component';
+import { SubjectPropertyStateFlipComponent } from './pages/flip-questions/subject-property-state-flip/subject-property-state-flip.component';
+import { SubjectPropertyZipFlipComponent } from './pages/flip-questions/subject-property-zip-flip/subject-property-zip-flip.component'; 
+import { ConfirmBorrowerSummaryFlipComponent } from './pages/funnel/confirm-borrower-summary-flip/confirm-borrower-summary-flip.component';
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },
@@ -77,7 +88,18 @@ const routes: Routes = [
   { path: 'existing-lien-amount', component: ExistingLienAmtComponent },
   { path: 'span-of-rent', component: LengthOfRentalComponent },
   { path: 'confirm-borrower-summary', component: ConfirmBorrowerSummaryComponent },
-  { path: 'submitted', component: SubmittedComponent }
+  { path: 'submitted', component: SubmittedComponent },
+  { path: 'borrower-entity-flip', component: BorrowerEntityFlipComponent },
+  { path: 'estimated-fico-flip', component: EstimatedFicoFlipComponent },
+  { path: 'investment-property-flips', component: InvestmentPropertyFlipsComponent },
+  { path: 'mortgage-broker-check-flip', component: MortgageBrokerCheckComponent },
+  { path: 'under-contract-flip', component: UnderContractFlipComponent },
+  { path: 'experience-flip', component: ExperienceFlipComponent },
+  { path: 'subject-property-street-flip', component: SubjectPropertyStreetFlipComponent },
+  { path: 'subject-property-city-flip', component: SubjectPropertyCityFlipComponent },
+  { path: 'subject-property-state-flip', component: SubjectPropertyStateFlipComponent },
+  { path: 'subject-property-zip-flip', component: SubjectPropertyZipFlipComponent },
+  { path: 'confirm-borrower-summary-flip', component: ConfirmBorrowerSummaryFlipComponent }
 ];
 
 function getAddress() {

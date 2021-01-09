@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BorrowerDataFlipServiceService } from '../../../services/borrower-data-flip-service.service';
 
 @Component({
   selector: 'app-mortgage-broker-check',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MortgageBrokerCheckComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data:BorrowerDataFlipServiceService) { }
 
   ngOnInit(): void {
+  }
+
+  onItemSelector(value :any) {
+    this.data.currentMortgageBrokerFlip = value;
   }
 
 }

@@ -41,25 +41,6 @@ export class BorrowerDataService {
   public currentMarketRents:String;
   public borrowerEntity:String;
 
-  public borrowerEntityFlip:String;
-  public estimatedFicoFlip:String;
-  public experienceFlip:String;
-  public rentalExperienceFlip:String;
-  public subjectPropertyStreetFlip:String;
-  public subjectPropertyCityFlip:String;
-  public subjectPropertyStateFlip:String;
-  public subjectPropertyZipFlip:String;
-  public subjectPropertyUnderContractFlip:Boolean;
-  public subjectPropertyTypeFlip:String;
-  public purchasePriceFlip:String;
-  public estimatedPropertyValueFlip:String;
-  public estimatedRehabCosts:String;
-  public annualInsuranceCostFlip:String;
-  public annualPropertyTaxesFlip:String;
-  public annualHoaFeesFlip:String;
-  public isPropertyLeasedFlip:Boolean;
-  public currentMortgageBrokerFlip:Boolean;
-
   public questions:any =[
     { 
       id: 1, name: 'owned-investment-properties', 

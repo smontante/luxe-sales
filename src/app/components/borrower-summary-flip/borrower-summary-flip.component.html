@@ -4,12 +4,30 @@
             BORROWER DETAILS</li>
         <hr>
         <li class="list-group-item">
-            <a routerLink="/borrower-entity" routerLinkActive="active">Borrower Entity Name:</a>
-   
+            <a routerLink="/borrower-entity-flip" routerLinkActive="active">Borrower Entity Name: {{data.borrowerEntityFlip}}</a>
         </li>
         <li class="list-group-item">
-            <a routerLink="/" routerLinkActive="active">Flip Experience:</a>
-         
+            <a routerLink="/estimated-fico-flip" routerLinkActive="active">Estimated FICO: {{data.estimatedFicoFlip}}</a>
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/investment-property-flips" routerLinkActive="active">How Many Investment Properties: {{data.investmentPropertyFlip}}</a>
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/mortgage-broker-check-flip" routerLinkActive="active">Current Mortgage Broker: {{data.currentMortgageBrokerFlip}}</a>
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/under-contract-flip" routerLinkActive="active">Property Under Contract: {{data.subjectPropertyUnderContractFlip}}</a>
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/experience-flip" routerLinkActive="active">Flip Experience: {{data.experienceFlip}}</a>
+        </li>
+        <li class="list-group-item">
+            <a routerLink="/subject-property-street-flip" routerLinkActive="active">Subject Property Address: 
+                {{data.subjectPropertyStreetFlip}}, 
+                {{data.subjectPropertyCityFlip}}, 
+                {{data.subjectPropertyStateFlip}}, 
+                {{data.subjectPropertyZipFlip}}
+            </a>
         </li>
     </ul>
     <div class="borrower-summary-button">
