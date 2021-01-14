@@ -52,6 +52,7 @@ import { NotInterestedComponent } from './pages/funnel/not-interested/not-intere
 import { NotInvestingComponent } from './pages/funnel/not-investing/not-investing.component';
 import { NotInterestedNowComponent } from './pages/funnel/not-interested-now/not-interested-now.component';
 import { NotInterestedAtAllComponent } from './pages/funnel/not-interested-at-all/not-interested-at-all.component';
+import { TeamComponent } from './pages/sidebar/team/team.component';
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },
@@ -106,7 +107,8 @@ const routes: Routes = [
   { path: 'subject-property-city-flip', component: SubjectPropertyCityFlipComponent },
   { path: 'subject-property-state-flip', component: SubjectPropertyStateFlipComponent },
   { path: 'subject-property-zip-flip', component: SubjectPropertyZipFlipComponent },
-  { path: 'confirm-borrower-summary-flip', component: ConfirmBorrowerSummaryFlipComponent }
+  { path: 'confirm-borrower-summary-flip', component: ConfirmBorrowerSummaryFlipComponent },
+  { path: 'team', component: TeamComponent }
 ];
 
 function getAddress() {

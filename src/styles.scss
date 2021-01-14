@@ -103,6 +103,35 @@ body { margin: 0;
    cursor: pointer;
 }
 
+.nvestor-btn {
+   background-color: #e98b2e;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   margin: 8px;
+   font-size: 30px;
+   color:#103952;
+   border: none;
+   cursor: pointer;
+}
+
+.nvestor-btn a {
+   color: #103952;
+}
+
+.luxe-btn {
+   background-color: #004aad;
+   color: white;
+   width: 200px;
+   padding: 20px;
+   text-align: center;
+   margin: 8px;
+   font-size: 30px;
+   color:#103952;
+   border: none;
+   cursor: pointer;
+}
+
 .sms-btn {
    background-color: #29a3da;
    color: #fff0ff;

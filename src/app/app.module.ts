@@ -74,6 +74,7 @@ import { ConfirmBorrowerSummaryFlipComponent } from './pages/funnel/confirm-borr
 import { NotInterestedNowComponent } from './pages/funnel/not-interested-now/not-interested-now.component';
 import { NotInterestedAtAllComponent } from './pages/funnel/not-interested-at-all/not-interested-at-all.component';
 import { NotInvestingNowComponent } from './pages/funnel/not-investing-now/not-investing-now.component';
+import { TeamComponent } from './pages/sidebar/team/team.component';
 
 @NgModule({
   declarations: [
@@ -148,7 +149,8 @@ import { NotInvestingNowComponent } from './pages/funnel/not-investing-now/not-i
     ConfirmBorrowerSummaryFlipComponent,
     NotInterestedNowComponent,
     NotInterestedAtAllComponent,
-    NotInvestingNowComponent
+    NotInvestingNowComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
