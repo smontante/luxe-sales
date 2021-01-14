@@ -75,6 +75,7 @@ import { NotInterestedNowComponent } from './pages/funnel/not-interested-now/not
 import { NotInterestedAtAllComponent } from './pages/funnel/not-interested-at-all/not-interested-at-all.component';
 import { NotInvestingNowComponent } from './pages/funnel/not-investing-now/not-investing-now.component';
 import { TeamComponent } from './pages/sidebar/team/team.component';
+import { ContactFormComponent } from './pages/funnel/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -150,7 +151,8 @@ import { TeamComponent } from './pages/sidebar/team/team.component';
     NotInterestedNowComponent,
     NotInterestedAtAllComponent,
     NotInvestingNowComponent,
-    TeamComponent
+    TeamComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

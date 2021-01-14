@@ -53,6 +53,7 @@ import { NotInvestingComponent } from './pages/funnel/not-investing/not-investin
 import { NotInterestedNowComponent } from './pages/funnel/not-interested-now/not-interested-now.component';
 import { NotInterestedAtAllComponent } from './pages/funnel/not-interested-at-all/not-interested-at-all.component';
 import { TeamComponent } from './pages/sidebar/team/team.component';
+import { ContactFormComponent } from './pages/funnel/contact-form/contact-form.component';
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },
@@ -62,6 +63,7 @@ const routes: Routes = [
   { path: 'not-investing', component: NotInvestingComponent },
   { path: 'not-investing-now', component: NotInterestedNowComponent },
   { path: 'not-interested-at-all', component: NotInterestedAtAllComponent },
+  { path: 'contact-form', component: ContactFormComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'owned-investment-properties', component: InvestmentPropertiesComponent },
   { path: 'own-personal-residence', component: PersonalResidenceComponent },
