@@ -49,12 +49,18 @@ import { SubjectPropertyStateFlipComponent } from './pages/flip-questions/subjec
 import { SubjectPropertyZipFlipComponent } from './pages/flip-questions/subject-property-zip-flip/subject-property-zip-flip.component'; 
 import { ConfirmBorrowerSummaryFlipComponent } from './pages/funnel/confirm-borrower-summary-flip/confirm-borrower-summary-flip.component';
 import { NotInterestedComponent } from './pages/funnel/not-interested/not-interested.component';
+import { NotInvestingComponent } from './pages/funnel/not-investing/not-investing.component';
+import { NotInterestedNowComponent } from './pages/funnel/not-interested-now/not-interested-now.component';
+import { NotInterestedAtAllComponent } from './pages/funnel/not-interested-at-all/not-interested-at-all.component';
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },
   { path: 'marketing-funnel', component: MarketingChannelComponent },
   { path: 'interested', component: InterestedComponent },
   { path: 'not-interested', component: NotInterestedComponent },
+  { path: 'not-investing', component: NotInvestingComponent },
+  { path: 'not-investing-now', component: NotInterestedNowComponent },
+  { path: 'not-interested-at-all', component: NotInterestedAtAllComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'owned-investment-properties', component: InvestmentPropertiesComponent },
   { path: 'own-personal-residence', component: PersonalResidenceComponent },

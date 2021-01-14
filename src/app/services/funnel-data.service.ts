@@ -81,7 +81,12 @@ export class FunnelDataService {
     {
       id: 3,
       name: 'Not Interested Now',
-      response: 'I understand, well the markets looking great! Are you looking to start again soon?'
+      response: 'I understand, well the markets looking great! Are you looking to started anytime soon  ?'
+    },
+    {
+      id: 4,
+      name: 'Not Investing',
+      response: 'Okay, no problem. We have some of the lowest rates for investors. When are you looking to start?'
     }
   ]
 

@@ -3,18 +3,17 @@
         <h1 class="header-text">Get them excited to invest</h1>
         <div class="divider"></div>
         <h1 class="question-text">
-            You're not interested at all.. or.. just not at the moment?
-            <br>
+           {{data.funnel[0].response}}
         </h1>
         <div class="row">
             <div class="col-md-4">
                 <div class="btn-group">
                     <div style="display: flex; flex-direction: row;">
                         <div class="submit-button-none">
-                            <a routerLink="/products" routerLinkActive="active">AT ALL</a>
+                            <a routerLink="/not-interested-at-all" routerLinkActive="active">AT ALL</a>
                         </div>
                         <div class="submit-button">
-                            <a routerLink="/not-interested" routerLinkActive="active">NOT NOW</a>
+                            <a routerLink="/not-investing" routerLinkActive="active">NOT NOW</a>
                         </div>
                     </div>
                 </div>

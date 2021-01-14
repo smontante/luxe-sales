@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FunnelDataService } from '../../../services/funnel-data.service';
 
 @Component({
   selector: 'app-not-interested',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotInterestedComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data:FunnelDataService) { }
 
   ngOnInit(): void {
   }
