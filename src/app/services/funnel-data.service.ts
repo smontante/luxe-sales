@@ -86,7 +86,7 @@ export class FunnelDataService {
     {
       id: 4,
       name: 'Not Investing',
-      response: 'Okay, no problem. We have some of the lowest rates for investors. When are you looking to start?'
+      response: 'No worries. We do have some of the lowest rates for investors. When are you looking to start?'
     }
   ]
 
