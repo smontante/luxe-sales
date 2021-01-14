@@ -5,6 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class FunnelDataService {
 
+  public leadContactFormName:String;
+  public leadContactFormEmail:String;
+  public leadContactFormPhone:String;
+  
   public sales_team_reponse:string = `
     Thank's for calling back... We've spoken in the past in regards to fix and flip financing. Just following up, and seeing how the investing is going for you?
   `;

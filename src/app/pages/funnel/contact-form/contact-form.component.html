@@ -7,19 +7,22 @@
                 <div class="col">
                 <h1 style="color: white;">Name</h1>
                 <div class="col-sm-10">
-                    <input type="text"
+                    <input type="text" [(ngModel)]="this.data.leadContactFormName"
                         class="form-control form-control-lg questionInput">
+                        <p>{{data.leadContactFormName}}</p>
                 </div>
                 <h1 style="color: white;">Email</h1>
                 <div class="col-sm-10">
-                    <input type="text"
+                    <input type="email" [(ngModel)]="this.data.leadContactFormEmail"
                         class="form-control form-control-lg questionInput">
+                        <p>{{data.leadContactFormEmail}}</p>
                 </div>
                 </div>
                 <h1 style="color: white;">Phone</h1>
                 <div class="col-sm-10">
-                    <input type="text"
+                    <input type="text" [(ngModel)]="this.data.leadContactFormPhone"
                         class="form-control form-control-lg questionInput">
+                        <p>{{data.leadContactFormPhone}}</p>
                 </div>
                 <div style="margin-top: 15px;" class="row">
                     <div class="col-md-4">
