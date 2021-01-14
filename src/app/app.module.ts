@@ -71,6 +71,9 @@ import { AnnualPropertyTaxesFlipComponent } from './pages/flip-questions/annual-
 import { AnnualHoaFeesFlipComponent } from './pages/flip-questions/annual-hoa-fees-flip/annual-hoa-fees-flip.component';
 import { InvestmentPropertyFlipsComponent } from './pages/flip-questions/investment-property-flips/investment-property-flips.component';
 import { ConfirmBorrowerSummaryFlipComponent } from './pages/funnel/confirm-borrower-summary-flip/confirm-borrower-summary-flip.component';
+import { NotInterestedNowComponent } from './pages/funnel/not-interested-now/not-interested-now.component';
+import { NotInterestedAtAllComponent } from './pages/funnel/not-interested-at-all/not-interested-at-all.component';
+import { NotInvestingNowComponent } from './pages/funnel/not-investing-now/not-investing-now.component';
 
 @NgModule({
   declarations: [
@@ -142,7 +145,10 @@ import { ConfirmBorrowerSummaryFlipComponent } from './pages/funnel/confirm-borr
     AnnualPropertyTaxesFlipComponent,
     AnnualHoaFeesFlipComponent,
     InvestmentPropertyFlipsComponent,
-    ConfirmBorrowerSummaryFlipComponent
+    ConfirmBorrowerSummaryFlipComponent,
+    NotInterestedNowComponent,
+    NotInterestedAtAllComponent,
+    NotInvestingNowComponent
   ],
   imports: [
     BrowserModule,

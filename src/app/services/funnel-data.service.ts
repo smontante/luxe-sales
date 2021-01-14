@@ -67,6 +67,24 @@ export class FunnelDataService {
     }
   ]
 
+  public funnel:any = [
+    {
+      id: 1,
+      name: 'Not Interested',
+      response: 'Youre not interested at all.. or.. just not right now'
+    },
+    {
+      id: 2,
+      name: 'Not Interested At All',
+      response: 'Okay, no problem. Lets stay in touch in case anything changes. Whens a better time for us to connect?'
+    },
+    {
+      id: 3,
+      name: 'Not Interested Now',
+      response: 'I understand, well the markets looking great! Are you looking to start again soon?'
+    }
+  ]
+
   constructor() { }
 
   showMktDiv = {

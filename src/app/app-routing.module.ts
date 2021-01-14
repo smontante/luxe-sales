@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LandingComponent } from '../app/pages/landing/landing.component';
 import { MarketingChannelComponent } from '../app/pages/funnel/marketing-channel/marketing-channel.component';
 import { InvestmentPropertiesComponent } from '../app/pages/questions/investment-properties/investment-properties.component';
 import { AvgMonthlyDepComponent } from './pages/questions/avg-monthly-dep/avg-monthly-dep.component';
@@ -49,11 +48,13 @@ import { SubjectPropertyCityFlipComponent } from './pages/flip-questions/subject
 import { SubjectPropertyStateFlipComponent } from './pages/flip-questions/subject-property-state-flip/subject-property-state-flip.component';
 import { SubjectPropertyZipFlipComponent } from './pages/flip-questions/subject-property-zip-flip/subject-property-zip-flip.component'; 
 import { ConfirmBorrowerSummaryFlipComponent } from './pages/funnel/confirm-borrower-summary-flip/confirm-borrower-summary-flip.component';
+import { NotInterestedComponent } from './pages/funnel/not-interested/not-interested.component';
 
 const routes: Routes = [
   { path: '', component: MarketingChannelComponent },
   { path: 'marketing-funnel', component: MarketingChannelComponent },
   { path: 'interested', component: InterestedComponent },
+  { path: 'not-interested', component: NotInterestedComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'owned-investment-properties', component: InvestmentPropertiesComponent },
   { path: 'own-personal-residence', component: PersonalResidenceComponent },
